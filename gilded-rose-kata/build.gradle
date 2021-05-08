@@ -2,14 +2,13 @@ group 'dev.marcellogalhardo'
 version '0.2.0'
 
 buildscript {
-    ext.kotlin_version = '1.5.0'
 
     repositories {
         mavenCentral()
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath libs.kotlin.gradle.plugin
     }
 }
 
@@ -21,8 +20,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    implementation libs.kotlin.stdlib
+    testImplementation libs.kotlin.test
 }
 
 sourceSets {
