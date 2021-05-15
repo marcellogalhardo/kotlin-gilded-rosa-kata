@@ -185,7 +185,7 @@ class GildedRoseTest {
     }
 
     @Test
-    fun `Backstage drops to 0 after the concert`() {
+    fun `Backstage quality drops to 0 after the concert`() {
         val item = Item("Backstage passes to a TAFKAL80ETC concert", 0, 1)
 
         val sut = GildedRose(listOf(item))
